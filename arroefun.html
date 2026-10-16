@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <p id="res"> </p>
+        <script>
+            const person=
+             {
+                name:'prarthana',
+                regularGreet:function(){ 
+                    return 'regular: this.name='+ this.name;
+                },
+                arrGreet:()=>{
+                    return 'arrow: this.name='+ this.name;
+                }
+            };
+            const a=person.regularGreet();
+            const b=person.arrGreet();
+            document.getElementById("res").innerHTML =a+'<br>'+b;
+        </script>
+    </body>
+</html>
